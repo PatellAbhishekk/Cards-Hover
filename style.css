@@ -1,0 +1,141 @@
+/* MARK: reset 
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "FigTree", sans-serif;
+}
+/* MARK: main 
+  */
+main {
+  height: 100vh;
+  width: 100vw;
+  color: black;
+  background-image: url(naruto2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* filter: blur(1); */
+  padding-top: 0.1px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: Georgia, sans-serif;
+  color: rgb(245, 8, 126);
+  font-weight: 60px;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  margin-left: 520px;
+  margin-right: 520px;
+  border: 4px solid black;
+  border-radius: 36px;
+}
+p {
+  font-family: serif;
+  font-size: 30px;
+  color: sandybrown;
+}
+/* MARK: conatiner 
+  */
+.container {
+  height: 500px;
+  width: 650px;
+  border: 5px solid rgb(8, 8, 8);
+  margin: 30px auto 0; /* (t, r, b, l) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px;
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+  /* background-size: contain; */
+  border-radius: 36px;
+}
+
+.card {
+  height: 80%;
+  width: 30%;
+  background: black;
+  border-radius: 12px;
+  padding: 10px;
+  border: 2px solid black;
+}
+/* MARK: child hover 
+  */
+.card:nth-child(1) {
+  background-image: url(mad.webp);
+  background-size: cover;
+  transform: rotate(-5deg);
+}
+
+.card:nth-child(1):hover {
+  background-image: url(madara.webp);
+  transform: scale(1.1);
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  border-radius: 30px;
+}
+.card:nth-child(2) {
+  background-image: url(oobito.webp);
+  background-size: cover;
+  transform: scale(1.1);
+  transform: rotate(5deg);
+}
+.card:nth-child(2):hover {
+  background-image: url(obito2.webp);
+  transform: scale(1.1);
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.card:nth-child(3) {
+  background-image: url(itachi.webp);
+  background-size: cover;
+  transform: scale(1.1);
+  transform: rotate(-5deg);
+}
+.card:nth-child(3):hover {
+  background-image: url(itachi2.webp);
+  transform: scale(1.1);
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  border-radius: 30px;
+}
+.card:nth-child(4) {
+  background-image: url(sasuke-.webp);
+  background-size: cover;
+  transform: scale(1.1);
+  transform: rotate(5deg);
+}
+.card:nth-child(4):hover {
+  background-image: url(sasuke.webp);
+  transform: scale(1.1);
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.card:nth-child(1),
+.card:nth-child(2),
+.card:nth-child(3),
+.card:nth-child(4) {
+  cursor: pointer;
+  transition: all 1s;
+}
